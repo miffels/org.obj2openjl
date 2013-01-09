@@ -10,7 +10,7 @@ public class Execute_obj2openjlv3 {
 	public static void main(String [] args) {
 		OpenGLModelData openGLModelData;
 		try {
-			RawOpenGLModel openGLModel = new Obj2OpenJL().convert("src/org/obj2openjl/generator");
+			RawOpenGLModel openGLModel = new Obj2OpenJL().convert("src/org/obj2openjl/boxes");
 //			List<ArrayTransformation> transformations = new ArrayList<ArrayTransformation>();
 //			transformations.add(new TranslationTransformation(2, 1.f, 0.f, 0.f));
 //			transformations.add(new TranslationTransformation(2, 0.f, 1.f, 0.f));
@@ -40,7 +40,6 @@ public class Execute_obj2openjlv3 {
 			if(i < array.length - 1) {
 				System.out.print(", ");
 			}
-			if(i > 10) break;
 			c++;
 		}
 		System.out.println();
@@ -59,7 +58,6 @@ public class Execute_obj2openjlv3 {
 			if(i < array.length - 1) {
 				System.out.print(", ");
 			}
-			if(i > 10) break;
 			c++;
 		}
 		System.out.println();
@@ -78,7 +76,6 @@ public class Execute_obj2openjlv3 {
 			if(i < array.length - 1) {
 				System.out.print(", ");
 			}
-			if(i > 10) break;
 			c++;
 		}
 		System.out.println();
