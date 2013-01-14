@@ -3,7 +3,7 @@ org.obj2openjl
 
 A Java implementation of the infamous Obj2OpenGL python script. It lets you load Wavefront Object files (.obj) and convert them to arrays of indices, vertices, normals and texture coordinates as they are required by Kronos OpenGL libraries.
 
-The project [AugmentedBizz](https://github.com/Vladee/com.server.AugmentedBizz) is a sample project in which the library has been used. The AugmentedBizz server loads OBJ model data into some cloud storage, from which the corresponding Android client loads the models in order to display them in augmented reality scenarios.
+The project [AugmentedBizz](https://github.com/Vladee/com.server.AugmentedBizz) is a sample project in which the library has been used. The AugmentedBizz server loads OBJ model data into some cloud storage, from which the corresponding Android client loads the models in order to display them in augmented reality scenarios. See the [RenderManager](https://github.com/Vladee/com.client.AugmentedBizz/blob/master/AugmentedBizzClient/jni/renderer/RenderManager.cpp) native class for some hints on how to use it with JNI.
 
 
 Use ``Obj2OpenJL`` like so:
