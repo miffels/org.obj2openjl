@@ -42,4 +42,4 @@ openGLModelData.getTextureCoordinates();
 openGLModelData.getIndices();
 ```
 
-Note that the data returned is intended to be used with the GL_TRIANGLES rendering mode. The project ``org.obj2openjl.ui`` contains a simple Java2D viewer I used for testing which you may want to check out to get an impression if this library would work for you. It depends on this project, though, so that you will want to clone both and adjust the class plath dependency as necessary.
+Note that the data returned is intended to be used with the GL_TRIANGLES rendering mode. The project [``org.obj2openjl.ui``](https://github.com/miffels/org.obj2openjl.ui) contains a simple Java2D viewer I used for testing which you may want to check out to get an impression if this library would work for you. It depends on this project, though, so that you will want to clone both and adjust the class plath dependency as necessary.
