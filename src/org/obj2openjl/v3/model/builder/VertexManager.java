@@ -112,7 +112,7 @@ public class VertexManager {
 	}
 	
 	private String buildGlobalVertexIdentifierFrom(int vertexID, int normalID, int textureID) {
-		return vertexID + "." + normalID + "" + textureID;
+		return vertexID + "." + normalID + "." + textureID;
 	}
 	
 	public BoundingBox3D getVertexBoundingBox() {
