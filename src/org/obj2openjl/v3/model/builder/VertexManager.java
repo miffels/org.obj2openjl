@@ -38,7 +38,7 @@ public class VertexManager {
 		Integer normalID = faceProperty.getNormalIndex();
 		Integer textureCoordinateID = faceProperty.getTexturePointIndex();
 		
-		String globalVertexIdentifier = this.buildGlobalVertexIdentifierFrom(vertexID, normalID);
+		String globalVertexIdentifier = this.buildGlobalVertexIdentifierFrom(vertexID, normalID, textureCoordinateID);
 		DirectionalVertex vertex = this.idVertexMap.get(globalVertexIdentifier);
 		if(vertex == null) {
 			this.checkBounds(vertexID);
@@ -111,8 +111,8 @@ public class VertexManager {
 		return index == null ? null : this.textureCoordinates.get(index);
 	}
 	
-	private String buildGlobalVertexIdentifierFrom(int vertexID, int normalID) {
-		return vertexID + "." + normalID;
+	private String buildGlobalVertexIdentifierFrom(int vertexID, int normalID, int textureID) {
+		return vertexID + "." + normalID + "" + textureID;
 	}
 	
 	public BoundingBox3D getVertexBoundingBox() {
